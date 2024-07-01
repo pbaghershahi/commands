@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt-get update;
-apt-get install git screen vim curl wget -y;
+apt-get install git screen vim curl htop wget -y;
 
 cd /workspace;
 python3 -m venv env;
@@ -21,4 +21,6 @@ pip install gdown;
 pip install notebook;
 pip install pyyaml;
 pip install -U "ray[data,train,tune,serve]";
+pip uninstall fsspec;
+pip install --force-reinstall -v "fsspec==2024.3.1"
 printf "\033c";

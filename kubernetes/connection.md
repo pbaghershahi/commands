@@ -1,6 +1,7 @@
 ## Creat deployments
+kubectl get pods
 kubectl apply -f cprompt_deployment.yaml
-kubectl exec -it cprompt-deployment-7b6794d5db-tj4sv -- /bin/bash
+kubectl exec -it gpu-pod-example -- /bin/bash
 
 
 ## Connect to Jupyter:
